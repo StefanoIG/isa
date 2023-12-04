@@ -9,6 +9,19 @@ import Swal from 'sweetalert2';
 import { validarCorreo, validarPassword, validarRepetirPassword, validarCedula, validarTelefono, validarTexto } from '../validaciones';
 
 function Registro() {
+
+
+    const validarDatos = (nombre, apellidos, cedula, telefono, correo, contrasena, confirmarContrasena, facultad) => {
+        // Asegúrate de que cada función de validación devuelva true o false
+        if (!validarCedula(cedula) || !validarTelefono(telefono) || !validarCorreo(correo) ||
+            !validarPassword(contrasena) || contrasena !== confirmarContrasena ||
+            nombre === "" || apellidos === "" || cedula === "" || telefono === "" || correo === "" || facultad === "" || contrasena === "") {
+            return false;
+        }
+        return true;
+    };
+
+
     const backgroundStyle = {
         backgroundImage: `url(${fondo})`,
         backgroundSize: 'cover', // Para que la imagen cubra todo el elemento
@@ -21,28 +34,29 @@ function Registro() {
     };
     const navigate = useNavigate();
 
-    const validarDatos = () => {
+
+
+   
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
         const nombre = document.getElementById("nombre").value;
         const apellidos = document.getElementById("apellidos").value;
         const cedula = document.getElementById("cedula").value;
         const telefono = document.getElementById("telefono").value;
         const correo = document.getElementById("correo").value;
+        const facultad = document.getElementById("facultad").value;
         const contrasena = document.getElementById("Password").value;
         const confirmarContrasena = document.getElementById("RepeatPassword").value;
 
-        // Aquí llamarías a las funciones de validación y verificarías los errores
-        if (!validarCedula(cedula) || !validarTelefono(telefono) || !validarCorreo(correo) ||
-            !validarPassword(contrasena) || contrasena !== confirmarContrasena ||
-            nombre === "" || apellidos === "" || correo === "" || contrasena === "") {
-            return false;
+        if (!validarDatos(nombre, apellidos, cedula, telefono, correo, contrasena, confirmarContrasena, facultad)) {
+            // Mostrar mensaje de error
+            Toast.fire({
+                icon: "error",
+                title: "Hay errores en el formulario."
+            });
+            return;
         }
-        return true;
-    }
-
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-         // Realizar la validación
         
 
         const Toast = Swal.mixin({
@@ -56,14 +70,6 @@ function Registro() {
                 toast.onmouseleave = Swal.resumeTimer;
             }
         });
-
-        if (!validarDatos()) {
-            Toast.fire({
-                icon: "error",
-                title: "Hay errores en el formulario."
-            });
-            return;
-        }
 
         
 
