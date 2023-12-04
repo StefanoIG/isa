@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.main .top-bar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.main .secondary-bar {
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.main .centered {
+    justify-content: center;
+}
+
+.main .logo img {
+    padding: auto;
+    position: relative;
+    text-align: center;
+    width: 180px;
+    height: 50px;
+}
+
+.main nav ul,
+.main .secondary-bar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.main nav ul li,
+.main .secondary-bar ul li {
+    margin-right: 20px;
+}
+
+.main nav ul li a,
+.main .secondary-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos de la galería */
+.main .gallery {
+
+    text-align: center;
+    padding: 20px;
+}
+
+.main .gallery-container {
+    width: calc(100% ); /* Divide el 100% por el número de imágenes */
+    display: flex;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0 15px; /* Añade un relleno para separar las imágenes si es necesario */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+.main .gallery-controls {
+    margin-top: 20px;
+}
+
+.main .prev-button,
+.main .next-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.main .prev-button:hover,
+.main .next-button:hover {
+    background-color: #555;
+}
+
+.main .text-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .text-box {
+    background-color: #eee;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.main .text-box h3 {
+    font-size: 18px;
+}
+
+.main .text-box p {
+    font-size: 14px;
+}
+
+.main .gallery-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.main .gallery-container img {
+    width: 30%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+    height: auto;
+    margin-left: 15px;
+    margin-right: 15px; /* Ajusta el margen si es necesario */
+}
+
+.main .gallery-controls {
+    text-align: center;
+}
+
+.main .gallery-container img {
+    margin-left: 30px;
+}
+
+/* Estilos generales para los inputs de SweetAlert2 */
+.swal2-popup .swal2-input {
+    margin-bottom: 1rem; /* Añade espacio entre los inputs */
+    border: 1px solid #ced4da; /* Borde más suave */
+    border-radius: 0.25rem; /* Bordes redondeados */
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  /* Estiliza específicamente el input para el archivo */
+  .swal2-popup #swal-input2 {
+    padding: 0; /* Elimina el relleno para el input de archivo */
+    border: none; /* Elimina el borde */
+  }
+  
+  /* Estilo para el select */
+  .swal2-popup #swal-input4 {
+    display: block; /* Asegúrate de que el select ocupe el ancho completo */
+    width: 100%; /* Establece el ancho al 100% */
+    padding: 0.5rem; /* Relleno para hacerlo coherente con los inputs */
+    border: 1px solid #ced4da; /* Borde para el select */
+    border-radius: 0.25rem; /* Bordes redondeados para el select */
+    background-color: white; /* Fondo blanco para el select */
+    -webkit-appearance: none; /* Deshabilita el aspecto predeterminado en WebKit */
+       -moz-appearance: none; /* Deshabilita el aspecto predeterminado en Firefox */
+            appearance: none; /* Deshabilita el aspecto predeterminado en los navegadores */
+  }
+  
+  /* Estilo para el placeholder */
+  .swal2-popup .swal2-input::placeholder {
+    color: #adb5bd; /* Color del texto del placeholder */
+  }
+  
+  /* Estilo para el input de fecha */
+  .swal2-popup #swal-input3 {
+    cursor: pointer; /* Cambia el cursor para indicar que es seleccionable */
+  }
+  
+  /* Agrega estilos para hover y focus para mejorar la interactividad */
+  .swal2-popup .swal2-input:hover,
+  .swal2-popup .swal2-input:focus,
+  .swal2-popup #swal-input4:hover,
+  .swal2-popup #swal-input4:focus {
+    border-color: #80bdff; /* Color de borde cuando se pasa el mouse o se enfoca */
+    outline: none; /* Elimina el resaltado por defecto en focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra suave al enfocar */
+  }
+  
+  /* Estilos para el botón de carga de archivos, si lo necesitas */
+  .swal2-popup .swal2-file {
+    border-color: #ced4da;
+  }
+  

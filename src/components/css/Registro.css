@@ -1,0 +1,122 @@
+.registro body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+
+.registro .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.registro .logo {
+    padding: auto;
+    position: relative;
+    text-align: center;
+    width: 180px;
+    height: 40px;
+
+}
+
+.registro header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: inline-block;
+}
+
+.registro header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.registro nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.registro nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.registro li {
+    position: relative;
+    left: -10px;
+    top: -20px;
+}
+
+.registro nav ul li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.registro {
+    text-align: center;
+}
+
+.registro h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.registro .form-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap; /* Activa el wrapping de los elementos hijos */
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+}
+
+.registro .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    flex-basis: calc(50% - 10px); /* Ajusta el ancho de cada campo a la mitad del contenedor */
+}
+
+.registro label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registro input[type="text"],
+.registro input[type="number"],
+.registro input[type="email"],
+.registro input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registro button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.registro button:hover {
+    background-color: #555;
+}

@@ -1,0 +1,177 @@
+     /* Estilos generales */
+     body {
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: #f4f4f4;
+     }
+
+     .contacto .container {
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 20px;
+     }
+
+     /* Estilos del encabezado */
+     .contacto header {
+         background-color: #333;
+         color: #fff;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 10px 20px;
+     }
+
+     .contacto .logo img {
+         padding: auto;
+         position: relative;
+         text-align: center;
+         width: 180px;
+         height: 50px;
+     }
+
+     .contacto nav ul {
+         list-style: none;
+         padding: 0;
+         display: flex;
+     }
+
+     .contacto nav ul li {
+         margin-right: 20px;
+     }
+
+     nav ul li a {
+         text-decoration: none;
+         color: #fff;
+     }
+
+     .contacto .top-bar {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+     }
+
+     /* Estilos del cuadro de contacto */
+     .contacto {
+         text-align: center;
+     }
+
+     .contacto h2 {
+         font-size: 24px;
+         margin-bottom: 20px;
+     }
+
+     .contacto .contact-info {
+         background-color: #fff;
+         padding: 20px;
+         border-radius: 5px;
+         text-align: left;
+     }
+
+     .contacto .contact-info h3 {
+         font-size: 18px;
+         margin-bottom: 10px;
+         text-align: center;
+     }
+
+     .contacto .contact-info p {
+         font-size: 14px;
+         text-align: center;
+     }
+
+     /* Estilos de la caja de preguntas y comentarios */
+     .contacto .comments-box {
+         background-color: #fff;
+         padding: 20px;
+         border-radius: 5px;
+         margin-top: 20px;
+     }
+
+     .contacto .comments-box h3 {
+         font-size: 18px;
+         margin-bottom: 20px;
+     }
+
+     .contacto .comment-form {
+         text-align: left;
+     }
+
+     .contacto .comment-form label {
+         display: block;
+         margin-bottom: 5px;
+         font-weight: bold;
+     }
+
+     .contacto .comment-form textarea {
+         width: 100%;
+         padding: 10px;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+     }
+
+     .contacto .comment-form button {
+         background-color: #333;
+         color: #fff;
+         padding: 10px 20px;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+         font-weight: bold;
+     }
+
+     .contacto .comment-form button:hover {
+         background-color: #555;
+     }
+     .comment-form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    .form-input,
+    .form-textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    .form-input:focus,
+    .form-textarea:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+    }
+    
+    .form-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .form-button:hover {
+        background-color: #0056b3;
+    }
+    
